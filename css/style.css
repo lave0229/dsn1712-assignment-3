@@ -98,8 +98,8 @@ header span {
 
 
 /* About me section */
-#about-me {
-    padding: 3rem 0;
+#about-me-wrapper {
+    padding: 2rem 0;
 }
 
 
@@ -124,7 +124,7 @@ header span {
 
 .about img {
     width: 100%;
-    height: auto;
+    height: 0 auto;
     align-self: end;
 }
 
@@ -133,9 +133,17 @@ header span {
 
 /* Services section */
 
+
+
 #services {
     background-color: #fafafa;
     padding: 3rem 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 #services h2 {
@@ -145,12 +153,11 @@ header span {
     font-size: 3rem;
 }
 
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.services h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
+
 
 .services article {
     background-color: #fff;
@@ -158,21 +165,20 @@ header span {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: flex-start;
 }
 
-.services h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+
 
 .btn {
     display: inline-block;
-    margin: auto;
+    margin-top: auto;
     padding: 0.75rem 1.25rem;
     background-color: #000;
     color: #fff;
     text-decoration: none;
     border: 2px solid #000;
+    border-radius: 4px;
     text-align: center;
 }
 
@@ -190,21 +196,18 @@ header span {
     padding: 3rem 0;
 }
 
-#work h2,
-#work p {
-    text-align: center;  
-}
-    
 #work h2 {
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 #work p {
+    text-align: center;  
     max-width: 700px;
     margin: 0 auto 3rem;
 }
-
+    
 
 .work {
     display: grid;
